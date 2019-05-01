@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JBJJApp.Domain", "JBJJApp.Domain\JBJJApp.Domain.csproj", "{9F69241A-D316-4D64-B333-85E512F37E66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JBJJApp.Data", "JBJJApp.Data\JBJJApp.Data.csproj", "{A7D2B630-C1C6-4A98-A89A-1766A6244C4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel", "SharedKernel\SharedKernel.csproj", "{8D5F94D3-A2EA-4751-9C18-C52AE2EA5FF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel.Data", "SharedKernel.Data\SharedKernel.Data.csproj", "{A274A4BC-31B6-4F01-AF13-005F74C0659F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JBJJApp.Web", "JBJJApp.Web\JBJJApp.Web.csproj", "{04EFC059-06F8-4555-959B-487BB92F84B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JBJJApp.Web.ViewModels", "JBJJApp.Web.ViewModels\JBJJApp.Web.ViewModels.csproj", "{FE294764-6757-47F5-8FCA-9DDB472519D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B2709A25-E6BA-48A7-A0CA-FDA51B5B2415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASBJJApp.Services.Tests", "ASBJJApp.Services.Tests\ASBJJApp.Services.Tests.csproj", "{4DD070F9-2984-4E91-A7E2-D1A8350262CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F69241A-D316-4D64-B333-85E512F37E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F69241A-D316-4D64-B333-85E512F37E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F69241A-D316-4D64-B333-85E512F37E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F69241A-D316-4D64-B333-85E512F37E66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D2B630-C1C6-4A98-A89A-1766A6244C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D2B630-C1C6-4A98-A89A-1766A6244C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D2B630-C1C6-4A98-A89A-1766A6244C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D2B630-C1C6-4A98-A89A-1766A6244C4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D5F94D3-A2EA-4751-9C18-C52AE2EA5FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5F94D3-A2EA-4751-9C18-C52AE2EA5FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D5F94D3-A2EA-4751-9C18-C52AE2EA5FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D5F94D3-A2EA-4751-9C18-C52AE2EA5FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A274A4BC-31B6-4F01-AF13-005F74C0659F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A274A4BC-31B6-4F01-AF13-005F74C0659F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A274A4BC-31B6-4F01-AF13-005F74C0659F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A274A4BC-31B6-4F01-AF13-005F74C0659F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04EFC059-06F8-4555-959B-487BB92F84B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04EFC059-06F8-4555-959B-487BB92F84B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04EFC059-06F8-4555-959B-487BB92F84B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04EFC059-06F8-4555-959B-487BB92F84B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE294764-6757-47F5-8FCA-9DDB472519D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE294764-6757-47F5-8FCA-9DDB472519D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE294764-6757-47F5-8FCA-9DDB472519D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE294764-6757-47F5-8FCA-9DDB472519D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD070F9-2984-4E91-A7E2-D1A8350262CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD070F9-2984-4E91-A7E2-D1A8350262CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD070F9-2984-4E91-A7E2-D1A8350262CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD070F9-2984-4E91-A7E2-D1A8350262CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4DD070F9-2984-4E91-A7E2-D1A8350262CC} = {B2709A25-E6BA-48A7-A0CA-FDA51B5B2415}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5E5A0B3-A891-4B4B-BA88-61986BD29E63}
+	EndGlobalSection
+EndGlobal
