@@ -20,10 +20,10 @@ namespace JBJJApp.Data
         }
 
         #region Grade
-        public IEnumerable<GradeViewModel> GetGrade()
+        public IList<GradeViewModel> GetGrade()
         {
             var gradesData = _gradeRepo.GetAll();
-            var gradesVM = ObjectMapper.Mapper.Map<IEnumerable<GradeViewModel>>(gradesData);
+            var gradesVM = ObjectMapper.Mapper.Map<IList<GradeViewModel>>(gradesData);
             return gradesVM;
         }
 
@@ -54,10 +54,10 @@ namespace JBJJApp.Data
         #endregion
 
         #region Person
-        public IEnumerable<PersonViewModel> GetPerson()
+        public IList<PersonViewModel> GetPerson()
         {
             var personsData = _personRepo.GetAll();
-            var personsVM = ObjectMapper.Mapper.Map<IEnumerable<PersonViewModel>>(personsData);
+            var personsVM = ObjectMapper.Mapper.Map<IList<PersonViewModel>>(personsData);
             return personsVM;
         }
 

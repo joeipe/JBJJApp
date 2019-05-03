@@ -22,10 +22,10 @@ namespace JBJJApp.Data.DataServices
         }
 
         #region Outcome
-        public IEnumerable<OutcomeViewModel> GetOutcome()
+        public IList<OutcomeViewModel> GetOutcome()
         {
             var outcomesData = _outcomeRepo.GetAll();
-            var outcomesVM = ObjectMapper.Mapper.Map<IEnumerable<OutcomeViewModel>>(outcomesData);
+            var outcomesVM = ObjectMapper.Mapper.Map<IList<OutcomeViewModel>>(outcomesData);
             return outcomesVM;
         }
 
@@ -56,10 +56,10 @@ namespace JBJJApp.Data.DataServices
         #endregion
 
         #region Attendance
-        public IEnumerable<AttendanceViewModel> GetAttendance()
+        public IList<AttendanceViewModel> GetAttendance()
         {
             var attendancesData = _attendanceRepo.GetAll();
-            var attendancesVM = ObjectMapper.Mapper.Map<IEnumerable<AttendanceViewModel>>(attendancesData);
+            var attendancesVM = ObjectMapper.Mapper.Map<IList<AttendanceViewModel>>(attendancesData);
             return attendancesVM;
         }
 
@@ -90,10 +90,10 @@ namespace JBJJApp.Data.DataServices
         #endregion
 
         #region SparringDetails
-        public IEnumerable<SparringDetailsViewModel> GetSparringDetails()
+        public IList<SparringDetailsViewModel> GetSparringDetails()
         {
             var sparringDetailssData = _sparringDetailsRepo.GetAll();
-            var sparringDetailssVM = ObjectMapper.Mapper.Map<IEnumerable<SparringDetailsViewModel>>(sparringDetailssData);
+            var sparringDetailssVM = ObjectMapper.Mapper.Map<IList<SparringDetailsViewModel>>(sparringDetailssData);
             return sparringDetailssVM;
         }
 

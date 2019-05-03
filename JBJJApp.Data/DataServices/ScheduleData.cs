@@ -22,10 +22,10 @@ namespace JBJJApp.Data
         }
 
         #region ClassType
-        public IEnumerable<ClassTypeViewModel> GetClassType()
+        public IList<ClassTypeViewModel> GetClassType()
         {
             var classTypesData = _classTypeRepo.GetAll();
-            var classTypesVM = ObjectMapper.Mapper.Map<IEnumerable<ClassTypeViewModel>>(classTypesData);
+            var classTypesVM = ObjectMapper.Mapper.Map<IList<ClassTypeViewModel>>(classTypesData);
             return classTypesVM;
         }
 
@@ -56,11 +56,11 @@ namespace JBJJApp.Data
         #endregion
 
         #region TimeTable
-        public IEnumerable<TimeTableViewModel> GetTimeTable()
+        public IList<TimeTableViewModel> GetTimeTable()
         {
             var timeTablesData = _timeTableRepo.GetAll();
             //var timeTablesData = _timeTableRepo.SearchForInclude(x => x.Id>0, i => i.ClassType);
-            var timeTablesVM = ObjectMapper.Mapper.Map<IEnumerable<TimeTableViewModel>>(timeTablesData);
+            var timeTablesVM = ObjectMapper.Mapper.Map<IList<TimeTableViewModel>>(timeTablesData);
             return timeTablesVM;
         }
 

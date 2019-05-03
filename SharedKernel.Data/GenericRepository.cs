@@ -44,9 +44,9 @@ namespace SharedKernel.Data
             Save();
         }
 
-        public virtual IQueryable<TEntity> GetAll()
+        public virtual IEnumerable<TEntity> GetAll()
         {
-            return DataTable.AsNoTracking();
+            return DataTable.AsNoTracking().ToList();
         }
 
         public virtual TEntity GetById(int id)
@@ -54,20 +54,20 @@ namespace SharedKernel.Data
             return DataTable.AsNoTracking().SingleOrDefault(e => e.Id == id);
         }
 
-        public virtual IQueryable<TEntity> SearchFor(Expression<Func<TEntity, bool>> predicate)
+        public virtual IEnumerable<TEntity> SearchFor(Expression<Func<TEntity, bool>> predicate)
         {
-            return DataTable.AsNoTracking().Where(predicate);
+            return DataTable.AsNoTracking().Where(predicate).ToList();
         }
 
-        public virtual IQueryable<TEntity> GetAllInclude(params Expression<Func<TEntity, object>>[] includeProperties)
+        public virtual IEnumerable<TEntity> GetAllInclude(params Expression<Func<TEntity, object>>[] includeProperties)
         {
-            return GetAllIncluding(includeProperties);
+            return GetAllIncluding(includeProperties).ToList();
         }
 
-        public virtual IQueryable<TEntity> SearchForInclude(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includeProperties)
+        public virtual IEnumerable<TEntity> SearchForInclude(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includeProperties)
         {
             var query = GetAllIncluding(includeProperties);
-            return query.Where(predicate);
+            return query.Where(predicate).ToList();
         }
 
         private IQueryable<TEntity> GetAllIncluding(params Expression<Func<TEntity, object>>[] includeProperties)

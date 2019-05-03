@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4DD070F9-2984-4E91-A7E2-D1A8350262CC}</ProjectGuid>
+    <ProjectGuid>{24E1DDFB-6BCA-42F2-B3B9-674AC31D570E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ASBJJApp.Services.Tests</RootNamespace>
-    <AssemblyName>ASBJJApp.Services.Tests</AssemblyName>
+    <RootNamespace>JBJJApp.Data.Tests</RootNamespace>
+    <AssemblyName>JBJJApp.Data.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -69,7 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ScheduleTest.cs" />
+    <Compile Include="ScheduleDataTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -78,7 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JBJJApp.Data\JBJJApp.Data.csproj">
-      <Project>{A7D2B630-C1C6-4A98-A89A-1766A6244C4D}</Project>
+      <Project>{a7d2b630-c1c6-4a98-a89a-1766a6244c4d}</Project>
       <Name>JBJJApp.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\JBJJApp.Domain\JBJJApp.Domain.csproj">
@@ -86,7 +86,7 @@
       <Name>JBJJApp.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\JBJJApp.Web.ViewModels\JBJJApp.Web.ViewModels.csproj">
-      <Project>{FE294764-6757-47F5-8FCA-9DDB472519D0}</Project>
+      <Project>{fe294764-6757-47f5-8fca-9ddb472519d0}</Project>
       <Name>JBJJApp.Web.ViewModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\SharedKernel.Data\SharedKernel.Data.csproj">
@@ -94,7 +94,7 @@
       <Name>SharedKernel.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\SharedKernel\SharedKernel.csproj">
-      <Project>{8d5f94d3-a2ea-4751-9c18-c52ae2ea5ff8}</Project>
+      <Project>{8D5F94D3-A2EA-4751-9C18-C52AE2EA5FF8}</Project>
       <Name>SharedKernel</Name>
     </ProjectReference>
   </ItemGroup>
