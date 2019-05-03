@@ -29,9 +29,7 @@ namespace JBJJApp.Data.Tests
             _timeTablesInMemory = new List<TimeTable>() { timeTable1, timeTable2 };
 
             _jbjjAppMockingContext = new Mock<JBJJAppContext>();
-
             //_jbjjAppMockingContext.Setup(x => x.FixState()).Callback<ClassType>((entity) => _classTypesInMemory.Remove(entity));
-
             _jbjjAppMockingContext.Setup(x => x.Set<ClassType>()).Returns(TestHelpers.MockDbSet(_classTypesInMemory));
             _jbjjAppMockingContext.Setup(x => x.Set<TimeTable>()).Returns(TestHelpers.MockDbSet(_timeTablesInMemory));
 
