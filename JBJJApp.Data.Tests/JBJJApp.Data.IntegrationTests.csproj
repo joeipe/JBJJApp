@@ -71,6 +71,8 @@
   <ItemGroup>
     <Compile Include="ScheduleDataTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentDataTests.cs" />
+    <Compile Include="DayAtDojoDataTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
