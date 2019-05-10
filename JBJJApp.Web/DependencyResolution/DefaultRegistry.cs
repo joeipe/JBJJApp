@@ -16,9 +16,16 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 namespace JBJJApp.Web.DependencyResolution {
-    using JBJJApp.Data;
+    using DayAtDojo.Data;
+    using DayAtDojo.Data.Services;
+    using JBJJApp.Web.Controllers;
+    using Schedule.Data;
+    using Schedule.Data.Services;
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
+    using StructureMap.Web.Pipeline;
+    using Student.Data;
+    using Student.Data.Services;
     using System.Data.Entity;
 
     public class DefaultRegistry : Registry {
@@ -31,7 +38,23 @@ namespace JBJJApp.Web.DependencyResolution {
                     scan.WithDefaultConventions();
                 });
             //For<IExample>().Use<Example>();
-            For<DbContext>().Use<JBJJAppContext>().Transient();
+            /*
+            var scheduleContext = For<DbContext>().Use<ScheduleContext>().Transient();
+            For<ScheduleController>().Use<ScheduleController>()
+                .Ctor<ScheduleData>().Is(scheduleContext)
+                .LifecycleIs<HttpContextLifecycle>();
+
+            var StudentContext = For<DbContext>().Use<StudentContext>().Transient();
+            For<StudentController>().Use<StudentController>()
+                .Ctor<StudentData>().Is(StudentContext)
+                .LifecycleIs<HttpContextLifecycle>();
+
+            var DayAtDojoContext = For<DbContext>().Use<DayAtDojoContext>().Transient();
+            For<DayAtDojoController>().Use<DayAtDojoController>()
+                .Ctor<DayAtDojoData>().Is(DayAtDojoContext)
+                .LifecycleIs<HttpContextLifecycle>();
+                */
+
         }
 
         #endregion

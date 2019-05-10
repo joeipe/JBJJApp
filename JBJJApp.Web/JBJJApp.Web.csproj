@@ -294,21 +294,41 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JBJJApp.Data\JBJJApp.Data.csproj">
-      <Project>{a7d2b630-c1c6-4a98-a89a-1766a6244c4d}</Project>
-      <Name>JBJJApp.Data</Name>
+    <ProjectReference Include="..\DayAtDojo.Data\DayAtDojo.Data.csproj">
+      <Project>{FDA8320C-BA7F-45E5-86B0-266E0D27EA55}</Project>
+      <Name>DayAtDojo.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\JBJJApp.Domain\JBJJApp.Domain.csproj">
-      <Project>{9f69241a-d316-4d64-b333-85e512f37e66}</Project>
-      <Name>JBJJApp.Domain</Name>
+    <ProjectReference Include="..\DayAtDojo.Domain\DayAtDojo.Domain.csproj">
+      <Project>{2569E7F9-E20A-45BF-A006-7FD19D0766AA}</Project>
+      <Name>DayAtDojo.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\JBJJApp.Web.ViewModels\JBJJApp.Web.ViewModels.csproj">
       <Project>{fe294764-6757-47f5-8fca-9ddb472519d0}</Project>
       <Name>JBJJApp.Web.ViewModels</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Schedule.Data\Schedule.Data.csproj">
+      <Project>{D3400016-FD65-4DD6-AA9A-1F2340E55FD5}</Project>
+      <Name>Schedule.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Schedule.Domain\Schedule.Domain.csproj">
+      <Project>{E9F24DA8-4E98-428B-A060-6C4E363CB79B}</Project>
+      <Name>Schedule.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedKernel.Data\SharedKernel.Data.csproj">
+      <Project>{A274A4BC-31B6-4F01-AF13-005F74C0659F}</Project>
+      <Name>SharedKernel.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SharedKernel\SharedKernel.csproj">
       <Project>{8D5F94D3-A2EA-4751-9C18-C52AE2EA5FF8}</Project>
       <Name>SharedKernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student.Data\Student.Data.csproj">
+      <Project>{8B432A84-4C40-427F-8366-CD14DB3CB22E}</Project>
+      <Name>Student.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student.Domain\Student.Domain.csproj">
+      <Project>{04D3AFAD-C7B7-4FC0-B90C-DA5ECFF899E5}</Project>
+      <Name>Student.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

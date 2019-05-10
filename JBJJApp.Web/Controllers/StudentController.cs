@@ -1,6 +1,9 @@
-﻿using JBJJApp.Data;
-using JBJJApp.Web.ViewModels;
+﻿using JBJJApp.Web.ViewModels;
+using SharedKernel.Data;
 using SharedKernel.Enums;
+using Student.Data;
+using Student.Data.Services;
+using Student.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +17,15 @@ namespace JBJJApp.Web.Controllers
     {
         private StudentData _studentData;
 
-        public StudentController(StudentData studentData)
+        //public StudentController(StudentData studentData)
+        //{
+        //    _studentData = studentData;
+        //}
+
+        public StudentController()
         {
-            _studentData = studentData;
+            var dbContext = new StudentContext();
+            _studentData = new StudentData(new GenericRepository<Grade>(dbContext), new GenericRepository<Person>(dbContext));
         }
 
         #region Grade

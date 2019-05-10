@@ -13,7 +13,7 @@ namespace JBJJApp.Web.ViewModels
         public int OutcomeId { get; set; }
         public string TechniqueUsed { get; set; }
         public AttendanceViewModel Attendance { get; set; }
-        public PersonViewModel Person { get; set; }
+        public PersonSparringPartnerViewModel PersonSparringPartner { get; set; }
         public OutcomeViewModel Outcome { get; set; }
     }
 }

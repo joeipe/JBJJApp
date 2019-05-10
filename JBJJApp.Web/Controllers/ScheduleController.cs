@@ -1,6 +1,8 @@
-﻿using JBJJApp.Data;
-using JBJJApp.Domain;
-using JBJJApp.Web.ViewModels;
+﻿using JBJJApp.Web.ViewModels;
+using Schedule.Data;
+using Schedule.Data.Services;
+using Schedule.Domain;
+using SharedKernel.Data;
 using SharedKernel.Enums;
 using System;
 using System.Collections.Generic;
@@ -15,9 +17,15 @@ namespace JBJJApp.Web.Controllers
     {
         private ScheduleData _scheduleData;
 
-        public ScheduleController(ScheduleData scheduleData)
+        //public ScheduleController(ScheduleData scheduleData)
+        //{
+        //    _scheduleData = scheduleData;
+        //}
+
+        public ScheduleController()
         {
-            _scheduleData = scheduleData;
+            var dbContext = new ScheduleContext();
+            _scheduleData = new ScheduleData(new GenericRepository<ClassType>(dbContext), new GenericRepository<TimeTable>(dbContext));
         }
 
         #region ClassType
