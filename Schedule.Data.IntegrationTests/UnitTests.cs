@@ -30,7 +30,6 @@ namespace Schedule.Data.IntegrationTests
             _timeTablesInMemory = new List<TimeTable>() { timeTable1, timeTable2 };
 
             _scheduleMockingContext = new Mock<ScheduleContext>();
-            //_jbjjAppMockingContext.Setup(x => x.FixState()).Callback<ClassType>((entity) => _classTypesInMemory.Remove(entity));
             _scheduleMockingContext.Setup(x => x.Set<ClassType>()).Returns(TestHelpers.MockDbSet(_classTypesInMemory));
             _scheduleMockingContext.Setup(x => x.Set<TimeTable>()).Returns(TestHelpers.MockDbSet(_timeTablesInMemory));
 
